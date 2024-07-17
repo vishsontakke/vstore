@@ -1,13 +1,11 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { NgModule } from "@angular/core";
 
-@Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+@NgModule({
+  declarations : [], //declare all the components ,directives,& pipes
+  exports: [],// components ,directives,& pipes,modules to other modules
+  imports: [],// components ,directives,& pipes,modules from other modules
+  providers:[],//provides services ,interceptors
+  bootstrap:[], // will contain components which will be entry point for angular
+
 })
-export class AppComponent {
-  title = 'vstore';
-}
+export class AppComponent{}
